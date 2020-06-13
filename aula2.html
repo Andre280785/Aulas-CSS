@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        h2{
+            background-color: #C0262C;
+            background-image: url(muitimidia/teste2.jpg), url(muitimidia/imagem2.gif);
+            background-repeat: no-repeat, repeat;
+            background-position: center right, center center;
+            width: 700px;
+            padding: 61px, 400px, 61px 100px;
+            color: #FFFFFF;
+            font-size: 2.5em;
+            letter-spacing: .1em;
+        }
+
+        figure {
+            border: #C0262C solid thin;
+            border-radius: 35px 35px 0 0;
+            padding: 20px 0 0;
+            text-align: center;
+        }
+
+        figcaption {
+            background-color: #C0262C;
+            padding: 7px 0;
+            color: #FFFFFF;
+            font-size: 1.5em;
+        }
+
+        ul li {
+            list-style-type: none;
+            list-style-image: url(miltimilia/ossinhos.png);
+            list-style-position: inside;
+            margin: 30px 0;
+        }
+
+        dt {
+            color: #fff;
+            background-color: #C0262C;
+            padding: 7px;
+        }
+
+        dd {
+            border: thin #C0262C solid;
+            border-radius: 0 0 25px 25px;
+            margin-top: -3px;
+            margin-bottom: 30px;
+            padding: 20px 20px 0;
+        }
+
+        ol {
+            list-style-type: none;
+            white-space: pre;
+            line-height: .9em;
+            /* Definir a variavel de contagem */
+            counter-reset: contador;
+        }
+
+        ol li:before {
+            color: #999999;
+            /* inrementando a variável em 1*/
+            counter-increment: contador;
+            /* usar o numero do contador com conteúdo */
+            content: "Questão " counter(contador) " \00BB ";
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #C0262C;
+            font-weight: bold;
+            padding:  7px;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        dd a[target="_blank"] {
+            text-decoration: none;
+            color: #C0262C;
+            font-weight: bold;
+            padding: 7px;
+            display:  inline-block;
+        }
+
+        dd a[target="_blank"]:hover {
+            text-decoration: underline;
+        }
+
+        dd a[href="#top"]{
+            text-decoration: none;
+            color: #C0262C;
+            font-weight: bold;
+            padding: 7px 0 7px 30px;
+            background: url(muitimidia/teste2.jpg) no-repeat left center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <h2>
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    </h2>
+    <ul>
+		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+		<li>Donec facilisis magna id ornare placerat.</li>
+		<li>Vivamus ullamcorper odio efficitur neque consectetur iaculis.</li>
+		<li>Quisque malesuada felis a leo faucibus, at malesuada urna elementum.</li>
+		<li>Etiam sed risus eu massa porta placerat.</li>
+		<li>Integer faucibus lacus at volutpat vestibulum.</li>
+		<li><a>Phasellus volutpat erat eu commodo dictum.</a></li>
+		<li>Sed et felis vel lorem cursus pulvinar nec non sem.</li>
+    </ul>
+    <dl>
+        <dt>Donec facilisis magna id ornare placerat.</dt>
+        <dd><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></dd>
+    </dl>
+    <ol>
+        <li>This is the first item.</li>
+        <li>This is the second item.</li>
+        <li>This is the third item.</li>
+    </ol>
+   
+</body>
+</html>

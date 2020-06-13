@@ -1,0 +1,31 @@
+<style type="text/css">
+/* para janelas grandes */
+@media screen and (min-width: 880px){
+    .responsivo{
+        color: green;
+    }
+    .d2, .d3{
+        display: none;
+    }
+}
+
+/* para janelas médias */
+@media screen and (max-width: 879px){
+    .responsivo{
+        color: blue;
+    }
+    .d1, .d3{
+        display: none;
+    }
+}
+
+/* para janelas pequenas */
+@media screen and (max-width: 510px){
+    .responsivo{
+        color: red;
+    }
+    .d1, .d2{
+        display: none;
+    }
+}
+</style>

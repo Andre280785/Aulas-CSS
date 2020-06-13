@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+       
+    </head>
+    <body>
+       <h1>Exemplo de formulários</h1>
+        <form action="#" method="GET" class="formLogin">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="email" >Email</label>
+                <input type="email" required name="email" placeholder="Digite seu email" id="email">
+                <br>
+                <label for="filhos">Número de filhos</label>
+                <input type="number" name="filhos" id="filhos" min="0" max="15" step="0.5">
+                <br>
+                <label for="data">Nascimento</label>
+                <input type="date" id="data" name="data" min="2020-05-01" max="2020-05-17">
+                <br>
+                <input type="radio" name="sexo" id="Masculino" value="M">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="sexo" id="Feminino" value="F">
+                <label for="Feminino">Feminino</label>
+                <br>
+                <label for="">Estado</label>
+                <select name="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>                
+            </fieldset>
+            <fieldset>
+                <legend>Área de Interesse</legend>
+                <label><input type="checkbox" name="html" value="html">HTML</label>
+                <label><input type="checkbox" name="css" value="css">CSS</label>
+                <label><input type="checkbox" name="js" value="js">JavaScript</label>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea style="resize: none" name="msg" cols="30" rows="10" maxlength="10"></textarea>
+                <textarea style="resize: none" name="msg" cols="30" rows="10" readonly>Aqui entra o texto do contrato a ser firmado
+                </textarea>
+                <label><input type="checkbox" name="termos" value="aceito" checked>Li e Aceito</label>
+                <input type="range" min="0" max="10" step="2">
+                <input type="time">
+                <input type="color">
+            </fieldset>
+            <input type="submit" value="mandar">
+            <input type="button" value="botão">
+            <input type="reset" value="reset">
+            <select size="5" multiple>
+                <option>opção1</option>
+                <option>opção2</option>
+                <option>opção3</option>
+                <option>opção4</option>
+                <option>opção5</option>
+            </select>
+        </form>
+    </body>
+</html>
